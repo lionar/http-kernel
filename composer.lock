@@ -1,0 +1,457 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "029887400b00b780a1fa3320157afc17",
+    "packages": [
+        {
+            "name": "illuminate/container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/container.git",
+                "reference": "28c0316680051d554929056ed3fe2d048913d2cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/28c0316680051d554929056ed3fe2d048913d2cd",
+                "reference": "28c0316680051d554929056ed3fe2d048913d2cd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.5.*",
+                "php": ">=7.0",
+                "psr/container": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Container\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Container package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-06-29T16:48:52+00:00"
+        },
+        {
+            "name": "illuminate/contracts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/contracts.git",
+                "reference": "1cc9ce9a808bb8931e716133a15457e8a2f58421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/1cc9ce9a808bb8931e716133a15457e8a2f58421",
+                "reference": "1cc9ce9a808bb8931e716133a15457e8a2f58421",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/container": "~1.0",
+                "psr/simple-cache": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Contracts\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Contracts package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-07-31T15:08:54+00:00"
+        },
+        {
+            "name": "lionar/agreements",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/agreements.git",
+                "reference": "9c15a1a30c3fb82e9414d2d110427c528fa581bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/agreements/zipball/9c15a1a30c3fb82e9414d2d110427c528fa581bc",
+                "reference": "9c15a1a30c3fb82e9414d2d110427c528fa581bc",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/support": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "agreed\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Interfaces for technical components.",
+            "keywords": [
+                "Agreements",
+                "lionar"
+            ],
+            "time": "2017-07-28T09:01:03+00:00"
+        },
+        {
+            "name": "lionar/app",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/app.git",
+                "reference": "906722d0a391951b4dc929cb68b3d5564c248d34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/app/zipball/906722d0a391951b4dc929cb68b3d5564c248d34",
+                "reference": "906722d0a391951b4dc929cb68b3d5564c248d34",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "*",
+                "lionar/http": "*",
+                "lionar/input": "*",
+                "lionar/statuses": "*",
+                "lionar/support": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "source/facades",
+                    "app\\": "source"
+                },
+                "files": [
+                    "readability.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A base to build well architectured application's.",
+            "keywords": [
+                "app",
+                "lionar"
+            ],
+            "time": "2017-08-01T11:57:02+00:00"
+        },
+        {
+            "name": "lionar/http",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/http.git",
+                "reference": "fc384e2ee483007d57079aff3de3a58b4fd62a1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/http/zipball/fc384e2ee483007d57079aff3de3a58b4fd62a1f",
+                "reference": "fc384e2ee483007d57079aff3de3a58b4fd62a1f",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/support": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "http\\": "source"
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple library for working with the HTTP protocol.",
+            "keywords": [
+                "http",
+                "lionar"
+            ],
+            "time": "2017-08-01T12:04:51+00:00"
+        },
+        {
+            "name": "lionar/input",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/input.git",
+                "reference": "eb219a2a922555a9ba315b5c044b2b895cfc194e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/input/zipball/eb219a2a922555a9ba315b5c044b2b895cfc194e",
+                "reference": "eb219a2a922555a9ba315b5c044b2b895cfc194e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "input\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple input package.",
+            "keywords": [
+                "input",
+                "lionar"
+            ],
+            "time": "2017-06-30T20:28:47+00:00"
+        },
+        {
+            "name": "lionar/statuses",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/statuses.git",
+                "reference": "140f5fc79beb0e01e99e93bfa2c1fa13490c8e98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/statuses/zipball/140f5fc79beb0e01e99e93bfa2c1fa13490c8e98",
+                "reference": "140f5fc79beb0e01e99e93bfa2c1fa13490c8e98",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/agreements": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "statuses\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mapping from status to closures.",
+            "keywords": [
+                "lionar",
+                "statuses"
+            ],
+            "time": "2017-06-28T20:56:29+00:00"
+        },
+        {
+            "name": "lionar/support",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/support.git",
+                "reference": "1c22c814d1e939a1ed4aa924e065d00cf7067182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/support/zipball/1c22c814d1e939a1ed4aa924e065d00cf7067182",
+                "reference": "1c22c814d1e939a1ed4aa924e065d00cf7067182",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "source"
+                },
+                "files": [
+                    "source/helpers/filesystem.php",
+                    "source/helpers/text.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "lionar",
+                "support"
+            ],
+            "time": "2017-07-31T09:37:13+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/2cc4a01788191489dc7459446ba832fa79a216a7",
+                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-06-28T15:35:32+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "753fa598e8f3b9966c886fe13f370baa45ef0e24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/753fa598e8f3b9966c886fe13f370baa45ef0e24",
+                "reference": "753fa598e8f3b9966c886fe13f370baa45ef0e24",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "time": "2017-01-02T13:31:39+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

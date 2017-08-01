@@ -1,0 +1,36 @@
+{
+	"name": "lionar/http-kernel",
+	"version": "0.0.1",
+	"description": "HTTP kernel implementation.",
+	"keywords": [ "Lionar", "HTTP" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aron Wouters",
+			"email": "lionar@mail.com",
+			"role": "Developer"
+		}
+	],
+	"require" : {
+		"lionar/app": "*",
+		"lionar/http": "*",
+		"lionar/support": "*"
+  	},
+	"require-dev": {
+		
+	},
+	"autoload": {
+    	"psr-4": {
+			"http\\": "source"
+   	 	}
+  	},
+	"autoload-dev": {
+    	"psr-4": {
+			"http\\tests\\": "tests"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
