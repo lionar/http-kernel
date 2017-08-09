@@ -2,18 +2,18 @@
 
 namespace http;
 
-use app\container;
+use firestark\app;
 use exception;
 
 class kernel
 {
     private $routes = [ ];
-    private $container = null;
+    private $app = null;
     
-    public function __construct ( array $routes, container $container )
+    public function __construct ( array $routes, app $app )
     {
         $this->routes = $routes;
-        $this->container = $container;
+        $this->app = $app;
     }
     
     public function handle ( request $request ) : response
@@ -36,7 +36,7 @@ class kernel
     private function call ( string $request )
     {
         if ( array_key_exists ( $request, $this->routes ) )
-            return $this->container->call ( $this->routes [ $request ] );
+            return $this->app->call ( $this->routes [ $request ] );
     }
     
     private function handleMissing ( ) : response
