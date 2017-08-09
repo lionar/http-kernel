@@ -24,11 +24,13 @@ class kernel
 
 	private function createResponse ( $result ) : response
 	{
-		 if ( is_string ( $result ) )
+		if ( $result instanceOf response )
+			return $result;
+		if ( is_string ( $result ) )
             return $this->handleString ( $result );
         if ( is_array ( $result ) )
             return $this->handleArray ( $result );
-        throw new exception ( 'The return value of your route can not be handled by the kernel.' );
+        throw new \exception ( 'The return value of your route can not be handled by the kernel.' );
 	}
 
 	private function handleString ( string $result ) : response
